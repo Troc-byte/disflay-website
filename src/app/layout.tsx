@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppFloatingButton } from "@/components/layout/whatsapp-floating-button";
+import { GoogleAnalytics } from "@/components/layout/google-analytics";
 import { baseMetadata } from "@/lib/metadata";
 import { organizationSchema } from "@/lib/structured-data";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
