@@ -1,0 +1,6 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="16" fill="#FFF3E5"/>
+  <rect x="40" y="40" width="720" height="520" rx="12" fill="#FFE4C4"/>
+  <text x="400" y="290" text-anchor="middle" fill="#E07800" font-family="system-ui" font-size="28" font-weight="600">Retail Stores</text>
+  <text x="400" y="330" text-anchor="middle" fill="#E07800" font-family="system-ui" font-size="16">Replace with industry photo</text>
+</svg>
