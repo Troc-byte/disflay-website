@@ -52,6 +52,7 @@ export function DemoRequestForm() {
       }
 
       setSubmitted(true);
+      form.reset();
     } catch {
       setError(true);
     } finally {
