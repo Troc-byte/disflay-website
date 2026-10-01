@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select } from "@/components/ui/select";
@@ -22,11 +22,42 @@ const screenOptions = [
 
 export function DemoRequestForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const whatsappUrl = buildWhatsAppUrl({
     source: "contact",
     medium: "post-form-cta",
   });
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(false);
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   if (submitted) {
     return (
@@ -56,12 +87,7 @@ export function DemoRequestForm() {
         <p className="mt-4 text-sm text-muted-foreground">
           Want a faster response?
         </p>
-        <Button
-          href={whatsappUrl}
-          external
-          size="md"
-          className="mt-3"
-        >
+        <Button href={whatsappUrl} external size="md" className="mt-3">
           WhatsApp Us
         </Button>
       </div>
@@ -70,16 +96,27 @@ export function DemoRequestForm() {
 
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        setSubmitted(true);
-      }}
+      name="demo-request"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
       className="rounded-2xl border border-border bg-white p-8"
     >
+      <input type="hidden" name="form-name" value="demo-request" />
+      <input type="hidden" name="bot-field" />
+
       <h2 className="text-xl font-semibold text-foreground">Book a demo</h2>
       <p className="mt-1 text-sm text-muted-foreground">
         Fill in your details and we&apos;ll get in touch.
       </p>
+
+      {error && (
+        <p className="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">
+          Something went wrong while sending your request. Please try again.
+        </p>
+      )}
+
       <div className="mt-6 space-y-5">
         <Input
           label="Full Name"
@@ -132,8 +169,8 @@ export function DemoRequestForm() {
           name="message"
           placeholder="Tell us about your needs (optional)"
         />
-        <Button type="submit" size="lg" className="w-full">
-          Submit
+        <Button type="submit" size="lg" className="w-full" disabled={submitting}>
+          {submitting ? "Sending..." : "Submit"}
         </Button>
       </div>
     </form>

@@ -22,6 +22,7 @@ export default function ContactPage() {
               Book a demo or reach out — we&apos;re happy to help.
             </p>
           </div>
+
           <div className="mt-20 grid gap-16 md:grid-cols-5">
             <div className="md:col-span-3">
               <DemoRequestForm />
@@ -30,6 +31,26 @@ export default function ContactPage() {
               <ContactInfo />
             </div>
           </div>
+
+          {/* Static Netlify Forms blueprint for Next.js form detection. */}
+          <form
+            name="demo-request"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            className="hidden"
+            aria-hidden="true"
+          >
+            <input type="hidden" name="form-name" value="demo-request" />
+            <input name="bot-field" />
+            <input name="name" />
+            <input name="business" />
+            <input name="phone" />
+            <input name="email" />
+            <input name="industry" />
+            <input name="screens" />
+            <textarea name="message" />
+          </form>
         </div>
       </Container>
     </section>
