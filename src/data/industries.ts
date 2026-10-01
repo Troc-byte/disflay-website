@@ -50,7 +50,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a hospital and I'm interested in Screeno digital signage.",
+      "Hi, I run a hospital and I'm interested in Disflay digital signage.",
     ctaText: "Modernise your hospital displays",
   },
   {
@@ -102,7 +102,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a clinic and I'm interested in Screeno digital signage.",
+      "Hi, I run a clinic and I'm interested in Disflay digital signage.",
     ctaText: "Inform patients effortlessly",
   },
   {
@@ -206,7 +206,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a cafe and I'm interested in Screeno digital signage.",
+      "Hi, I run a cafe and I'm interested in Disflay digital signage.",
     ctaText: "Elevate your cafe experience",
   },
   {
@@ -258,7 +258,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a retail store and I'm interested in Screeno digital signage.",
+      "Hi, I run a retail store and I'm interested in Disflay digital signage.",
     ctaText: "Drive in-store sales with digital signage",
   },
   {
@@ -310,7 +310,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a gym and I'm interested in Screeno digital signage.",
+      "Hi, I run a gym and I'm interested in Disflay digital signage.",
     ctaText: "Energise your gym with dynamic screens",
   },
   {
@@ -362,7 +362,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a hotel and I'm interested in Screeno digital signage.",
+      "Hi, I run a hotel and I'm interested in Disflay digital signage.",
     ctaText: "Impress guests from the lobby",
   },
   {
@@ -414,7 +414,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a school and I'm interested in Screeno digital signage.",
+      "Hi, I run a school and I'm interested in Disflay digital signage.",
     ctaText: "Communicate with students and parents",
   },
   {
@@ -466,7 +466,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I run a coaching institute and I'm interested in Screeno digital signage.",
+      "Hi, I run a coaching institute and I'm interested in Disflay digital signage.",
     ctaText: "Keep your students informed",
   },
   {
@@ -518,7 +518,7 @@ export const industries: Industry[] = [
       },
     ],
     whatsappMessage:
-      "Hi, I manage a shopping mall and I'm interested in Screeno digital signage.",
+      "Hi, I manage a shopping mall and I'm interested in Disflay digital signage.",
     ctaText: "Power your mall's digital directory",
   },
 ];

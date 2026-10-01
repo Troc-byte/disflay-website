@@ -4,12 +4,12 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 
 const slides = [
-  { src: "/images/hero/hero-1.webp", alt: "Screeno digital signage in a hospital lobby displaying patient information" },
-  { src: "/images/hero/hero-2.webp", alt: "Screeno digital menu board in a restaurant showing daily specials" },
-  { src: "/images/hero/hero-3.webp", alt: "Screeno digital signage in a retail store showcasing promotions" },
-  { src: "/images/hero/hero-4.webp", alt: "Screeno digital display in a gym showing class schedules" },
-  { src: "/images/hero/hero-5.webp", alt: "Screeno digital notice board in a school displaying announcements" },
-  { src: "/images/hero/hero-6.webp", alt: "Screeno digital signage in a clinic showing doctor availability" },
+  { src: "/images/hero/hero-1.webp", alt: "Disflay digital signage in a hospital lobby displaying patient information" },
+  { src: "/images/hero/hero-2.webp", alt: "Disflay digital menu board in a restaurant showing daily specials" },
+  { src: "/images/hero/hero-3.webp", alt: "Disflay digital signage in a retail store showcasing promotions" },
+  { src: "/images/hero/hero-4.webp", alt: "Disflay digital display in a gym showing class schedules" },
+  { src: "/images/hero/hero-5.webp", alt: "Disflay digital notice board in a school displaying announcements" },
+  { src: "/images/hero/hero-6.webp", alt: "Disflay digital signage in a clinic showing doctor availability" },
 ];
 
 export function HeroSlideshow() {

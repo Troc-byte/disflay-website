@@ -10,7 +10,7 @@ import { pricingFaq } from "@/data/faq";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Start free for 60 days. Screeno digital signage is just ₹299/screen/month. No contracts, no hidden fees. Content Starter Pack available at ₹1999.",
+    "Start free for 60 days. Disflay digital signage is just ₹299/screen/month. No contracts, no hidden fees. Content Starter Pack available at ₹1999.",
 };
 
 export default function PricingPage() {

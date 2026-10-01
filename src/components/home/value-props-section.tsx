@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const props: { title: string; description: React.ReactNode; icon: React.ReactNode }[] = [
   {
     title: "No tech skills needed",
-    description: "If you can use WhatsApp, you can use Screeno.",
+    description: "If you can use WhatsApp, you can use Disflay.",
     icon: (
       <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
@@ -45,7 +45,7 @@ export function ValuePropsSection() {
   return (
     <Section className="bg-muted">
       <Container>
-        <SectionHeading title="Why businesses choose Screeno" />
+        <SectionHeading title="Why businesses choose Disflay" />
         <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 md:gap-10">
           {props.map((prop) => (
             <div key={prop.title} className="rounded-3xl bg-white p-8 md:p-10">

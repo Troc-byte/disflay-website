@@ -7,7 +7,7 @@ export function PricingComparison() {
   return (
     <Section>
       <Container>
-        <SectionHeading title="Screeno vs traditional signage" />
+        <SectionHeading title="Disflay vs traditional signage" />
         <div className="mx-auto max-w-4xl overflow-x-auto">
           <table className="w-full text-left">
             <thead>

@@ -105,7 +105,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-background/10 pt-8 text-center text-sm text-background/40">
-          &copy; {new Date().getFullYear()} Screeno. All rights reserved.
+          &copy; {new Date().getFullYear()} Disflay. All rights reserved.
         </div>
       </Container>
     </footer>

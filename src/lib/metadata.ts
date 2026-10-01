@@ -21,8 +21,8 @@ export const baseMetadata: Metadata = {
     images: [
       {
         url: `${SITE_URL}/logo.svg`,
-        width: 123,
-        height: 116,
+        width: 781,
+        height: 350,
         alt: `${SITE_NAME} logo`,
       },
     ],

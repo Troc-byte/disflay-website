@@ -40,7 +40,7 @@ export function productSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Screeno Digital Signage",
+    name: "Disflay Digital Signage",
     description:
       "Turn any TV into a smart business display. 60 days free trial.",
     brand: {
@@ -51,7 +51,7 @@ export function productSchema() {
     offers: [
       {
         "@type": "Offer",
-        name: "Screeno Signage",
+        name: "Disflay Signage",
         price: "299",
         priceCurrency: "INR",
         availability: "https://schema.org/InStock",

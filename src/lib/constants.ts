@@ -1,15 +1,15 @@
-export const SITE_NAME = "Screeno";
-export const SITE_URL = "https://www.screenoapp.com";
+export const SITE_NAME = "Disflay";
+export const SITE_URL = "https://www.disflayapp.com";
 export const SITE_DESCRIPTION =
   "Turn any TV into a smart business display. Display menus, promotions, schedules, and announcements on any screen.";
 
 export const WHATSAPP_NUMBER = "918290420287";
 export const WHATSAPP_DISPLAY = "+91 82904 20287";
-export const EMAIL = "support@screenoapp.com";
+export const EMAIL = "info@disflay.com";
 
 export const PRICING = {
   signage: {
-    name: "Screeno Signage",
+    name: "Disflay Signage",
     trialDays: 60,
     price: 299,
     unit: "per screen/month",

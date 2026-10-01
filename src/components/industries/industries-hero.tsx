@@ -9,7 +9,7 @@ export function IndustriesHero() {
           <span className="text-primary">every industry</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-xl text-muted-foreground">
-          See how Screeno helps businesses communicate better.
+          See how Disflay helps businesses communicate better.
         </p>
       </Container>
     </section>

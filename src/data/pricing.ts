@@ -2,7 +2,7 @@ import type { PricingPlan } from "@/types";
 
 export const pricingPlans: PricingPlan[] = [
   {
-    name: "Screeno Signage",
+    name: "Disflay Signage",
     price: 299,
     unit: "per screen/month",
     trialDays: 60,
@@ -32,7 +32,7 @@ export const pricingPlans: PricingPlan[] = [
 ];
 
 export const comparisonData = {
-  headers: ["Feature", "Traditional Signage", "Screeno"],
+  headers: ["Feature", "Traditional Signage", "Disflay"],
   rows: [
     ["Update content", "Reprint every time", "Instant, from your phone"],
     ["Cost per change", "₹500–₹2000 per print", "₹0 — included"],

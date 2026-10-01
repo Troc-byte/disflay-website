@@ -7,7 +7,7 @@ const steps = [
     number: "01",
     title: "Connect your screen",
     description:
-      "Plug the Screeno player into any TV or monitor. All major brands supported.",
+      "Install Disflay on your Android TV and just connect to Disflay app on phone.",
   },
   {
     number: "02",

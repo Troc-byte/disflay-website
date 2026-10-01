@@ -6,7 +6,7 @@ import { ContactInfo } from "@/components/contact/contact-info";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Screeno. Chat on WhatsApp, request a demo, or email us. We respond within 2 hours during business hours.",
+    "Get in touch with Disflay. Chat on WhatsApp, request a demo, or email us. We respond within 2 hours during business hours.",
 };
 
 export default function ContactPage() {

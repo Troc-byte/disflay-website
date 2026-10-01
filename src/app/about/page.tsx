@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/section";
 import { CTASection } from "@/components/shared/cta-section";
 
 export const metadata: Metadata = {
-  title: "About Screeno",
+  title: "About Disflay",
   description:
     "Building India's most affordable and easy-to-use digital signage solution. Our mission to digitise every Indian business.",
 };
@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="py-24 md:py-32">
         <Container className="text-center">
           <h1 className="text-4xl font-semibold text-foreground sm:text-5xl md:text-6xl">
-            About Screeno
+            About Disflay
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground">
             The simplest way for Indian businesses to go digital with their
@@ -49,7 +49,7 @@ export default function AboutPage() {
         <Container>
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
-              What makes Screeno different
+              What makes Disflay different
             </h2>
             <div className="mt-12 space-y-10">
               <div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
 
       <CTASection
         title="Want to learn more?"
-        subtitle="We'd love to show you how Screeno works."
+        subtitle="We'd love to show you how Disflay works."
         source="about"
       />
     </>

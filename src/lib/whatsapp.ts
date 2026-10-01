@@ -12,7 +12,7 @@ export function buildWhatsAppUrl({
   message,
 }: WhatsAppParams): string {
   const defaultMessage =
-    "Hi, I'm interested in Screeno digital signage for my business.";
+    "Hi, I'm interested in Disflay digital signage for my business.";
   const body = message || defaultMessage;
   const tracked = `${body}\n\n[Source: ${source}, Medium: ${medium}]`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(tracked)}`;
