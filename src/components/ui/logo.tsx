@@ -6,9 +6,16 @@ type LogoProps = {
   iconClassName?: string;
   showText?: boolean;
   href?: string;
+  iconScale?: number;
 };
 
-export function LogoIcon({ className }: { className?: string }) {
+export function LogoIcon({
+  className,
+  style,
+}: {
+  className?: string;
+  style?: React.CSSProperties;
+}) {
   return (
     <svg
       viewBox="0 0 781 350"
@@ -72,11 +79,17 @@ export function Logo({
   iconClassName,
   showText = false,
   href = "/",
+  iconScale = 1,
 }: LogoProps) {
   const content = (
     <span className={cn("inline-flex items-center", className)}>
       <LogoIcon
         className={cn("h-7 w-auto shrink-0 md:h-8", iconClassName)}
+        style={{
+          transform: `scale(${iconScale})`,
+          transformOrigin: "left center",
+          transition: "transform 900ms cubic-bezier(0.22, 1, 0.36, 1)",
+        }}
       />
       <span className="sr-only">Disflay</span>
       {showText && (

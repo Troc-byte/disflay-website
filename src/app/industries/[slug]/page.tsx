@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -47,29 +48,52 @@ export default async function IndustryPage({
   return (
     <>
       {/* Hero */}
-      <section className="py-24 md:py-32">
+      <section className="pb-6 pt-8 md:pb-8 md:pt-10">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-semibold text-foreground sm:text-5xl md:text-6xl">
-              {industry.heroHeadline}
-            </h1>
-            <p className="mt-6 text-xl text-muted-foreground">
-              {industry.heroDescription}
-            </p>
-            <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button href={whatsappUrl} external size="lg" className="px-10 h-14 text-base">
-                WhatsApp Us
-              </Button>
-              <Button href="/contact" variant="outline" size="lg" className="px-10 h-14 text-base">
-                Book a Demo
-              </Button>
+          <div className="relative h-[480px] overflow-hidden rounded-3xl md:h-[500px]">
+            <Image
+              src={`/images/industries/${industry.slug}.webp`}
+              alt={`${industry.name} digital signage`}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="object-cover"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/45 to-black/30" />
+
+            <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
+              <div className="max-w-3xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
+                <h1 className="text-4xl font-semibold tracking-tight md:text-6xl">
+                  {industry.heroHeadline}
+                </h1>
+
+                <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/90 md:text-lg">
+                  {industry.heroDescription}
+                </p>
+
+                <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                  <Button
+                    href={buildWhatsAppUrl({
+                        source: "industry",
+                        medium: industry.slug,
+                      })}
+                  >
+                    WhatsApp Us
+                  </Button>
+
+                  <Button href="/contact" variant="outline" className="border-white bg-white text-black shadow-sm transition-colors hover:bg-white/85 hover:text-black">
+                    Book a Demo
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
       {/* Pain Points */}
-      <Section className="bg-muted">
+      <Section className="bg-muted !pt-12 md:!pt-16">
         <Container>
           <SectionHeading
             title="The problem"

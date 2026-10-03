@@ -58,7 +58,7 @@ export function ContactInfo() {
             Phone
           </h3>
           <a
-            href="tel:+918290420287"
+            href="tel:+919660021636"
             className="mt-2 inline-block text-lg font-medium text-foreground transition-colors hover:text-primary"
           >
             {WHATSAPP_DISPLAY}

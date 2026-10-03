@@ -39,6 +39,6 @@ export const pricingFaq: FAQItem[] = [
   {
     question: "How do I get support?",
     answer:
-      "Reach us on WhatsApp at +91 82904 20287 or email info@disflay.com. We respond during business hours.",
+      "Reach us on WhatsApp at +91 96600 21636 or email info@disflay.com. We respond during business hours.",
   },
 ];

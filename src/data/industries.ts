@@ -106,57 +106,62 @@ export const industries: Industry[] = [
     ctaText: "Inform patients effortlessly",
   },
   {
-    slug: "restaurants",
-    name: "Restaurants",
-    description: "Digital menu boards, offers, and customer engagement",
-    heroHeadline: "Digital Signage for Restaurants",
+    slug: "salons",
+    name: "Salons",
+    description: "Services, offers, appointments, and customer engagement",
+    heroHeadline: "Digital Signage for Salons",
     heroDescription:
-      "Replace printed menus with dynamic digital menu boards. Show daily specials, promotions, and engaging food content on your restaurant screens.",
+      "Showcase your services, promotions, packages, and appointment information on elegant digital displays throughout your salon.",
+
     painPoints: [
       {
-        title: "Expensive menu reprints",
+        title: "Static service information",
         description:
-          "Every price change or new dish means reprinting menus — costly and wasteful.",
+          "Printed service menus and price lists become outdated whenever services, packages, or prices change.",
       },
       {
-        title: "Static promotions",
+        title: "Promotions are easily missed",
         description:
-          "Table tents and posters can't be updated quickly for daily specials or limited-time offers.",
+          "Posters and printed offers don't always capture customers' attention while they are in the salon.",
       },
       {
-        title: "Missed upselling opportunities",
+        title: "Limited upselling opportunities",
         description:
-          "Without visual prompts, customers miss out on combos, add-ons, and chef specials.",
+          "Without visual prompts, customers may miss premium services, treatment packages, and add-ons.",
       },
     ],
+
     useCases: [
-      "Digital menu boards with prices",
-      "Daily specials and chef recommendations",
-      "Combo deals and upsell promotions",
-      "Wait time display for takeaway orders",
-      "Festive and seasonal menus",
+      "Service menus and pricing",
+      "Special offers and seasonal promotions",
+      "Hair, beauty, and treatment packages",
+      "Before-and-after visuals and portfolio content",
+      "Appointment and salon announcements",
     ],
+
     benefits: [
       {
-        title: "Update menus instantly",
+        title: "Promote services visually",
         description:
-          "Change prices, add new dishes, or run daily specials without printing a single page.",
+          "Showcase your treatments, packages, and latest services with engaging visuals on screen.",
       },
       {
-        title: "Increase average order value",
+        title: "Highlight offers instantly",
         description:
-          "Visual food content and combo highlights encourage customers to order more.",
+          "Change promotions, seasonal offers, and package deals without printing new posters.",
       },
       {
-        title: "Save on printing costs",
+        title: "Create a premium experience",
         description:
-          "No more reprinting menus, table tents, or promotional posters.",
+          "Modern digital displays give your salon a polished and professional atmosphere.",
       },
     ],
+
     whatsappMessage:
-      "Hi, I run a restaurant and I'm interested in digital menu boards.",
-    ctaText: "Get your digital menu board today",
+      "Hi, I run a salon and I'm interested in Disflay digital signage.",
+    ctaText: "Elevate your salon experience",
   },
+
   {
     slug: "cafes",
     name: "Cafes",

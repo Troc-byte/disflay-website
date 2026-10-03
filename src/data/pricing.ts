@@ -12,7 +12,7 @@ export const pricingPlans: PricingPlan[] = [
       "Unlimited content uploads",
       "Schedule content in advance",
       "Remote screen management",
-      "Works on any TV or monitor",
+      "Works on any Screen or monitor",
       "Offline playback support",
       "WhatsApp-based support",
     ],

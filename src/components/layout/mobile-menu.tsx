@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
 import { navLinks } from "@/data/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -9,12 +10,14 @@ export function MobileMenu() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="relative z-50 md:hidden">
       <button
-        onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-muted"
+        type="button"
+        onClick={() => setOpen((value) => !value)}
+        className="relative z-50 flex h-10 w-10 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-muted"
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
+        aria-controls="mobile-navigation"
       >
         {open ? (
           <svg
@@ -50,7 +53,10 @@ export function MobileMenu() {
       </button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-16 border-b border-border bg-white p-6">
+        <div
+          id="mobile-navigation"
+          className="absolute right-0 top-12 z-50 w-[calc(100vw-2rem)] max-w-sm rounded-2xl border border-border bg-white p-6 shadow-xl"
+        >
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
@@ -62,7 +68,13 @@ export function MobileMenu() {
                 {link.label}
               </Link>
             ))}
-            <Button href="/contact" size="md" className="mt-2 w-full">
+
+            <Button
+              href="/contact"
+              size="md"
+              className="mt-2 w-full"
+              onClick={() => setOpen(false)}
+            >
               Book Demo
             </Button>
           </div>

@@ -3,8 +3,8 @@ export const SITE_URL = "https://www.disflayapp.com";
 export const SITE_DESCRIPTION =
   "Turn any TV into a smart business display. Display menus, promotions, schedules, and announcements on any screen.";
 
-export const WHATSAPP_NUMBER = "918290420287";
-export const WHATSAPP_DISPLAY = "+91 82904 20287";
+export const WHATSAPP_NUMBER = "919660021636";
+export const WHATSAPP_DISPLAY = "+91 96600 21636";
 export const EMAIL = "info@disflay.com";
 
 export const PRICING = {

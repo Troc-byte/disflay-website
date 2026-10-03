@@ -27,7 +27,7 @@ export function Footer() {
       <Container className="py-20 md:py-24">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Logo className="text-background" />
+            <Logo className="text-background" iconClassName="h-[78px] w-auto shrink-0 md:h-[90px]" />
             <p className="mt-4 text-base text-background/50">
               Digital signage for Indian businesses.
             </p>

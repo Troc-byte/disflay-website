@@ -22,8 +22,13 @@ const props: { title: string; description: React.ReactNode; icon: React.ReactNod
     ),
   },
   {
-    title: "~₹10/day per screen",
-    description: (<><span className="font-semibold text-primary">60 days free</span>, then ₹299/month. No contracts.</>),
+    title: "Less than ₹9/day per screen",
+    description: (
+      <>
+        <span className="font-semibold text-primary">60 days free</span>{" "}
+        · Plan starts at ₹249/month. More screens at just ~₹1.7/day each.
+      </>
+    ),
     icon: (
       <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 8.25H9m6 3H9m3 6l-3-3h1.5a3 3 0 100-6M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

@@ -22,7 +22,7 @@ export function IndustryShowcase() {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
-                  src={`/images/industries/${industry.slug}.svg`}
+                  src={`/images/industries/${industry.slug}.webp`}
                   alt={`Digital signage for ${industry.name}`}
                   width={400}
                   height={300}

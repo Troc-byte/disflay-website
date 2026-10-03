@@ -15,7 +15,7 @@ export function IndustryGrid() {
           >
             <div className="aspect-[16/10] overflow-hidden">
               <Image
-                src={`/images/industries/${industry.slug}.svg`}
+                src={`/images/industries/${industry.slug}.webp`}
                 alt={`Digital signage for ${industry.name}`}
                 width={800}
                 height={500}
